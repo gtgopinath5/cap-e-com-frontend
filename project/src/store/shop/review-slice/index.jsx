@@ -10,7 +10,7 @@ export const addReview = createAsyncThunk(
   "/order/addReview",
   async (formdata) => {
     const response = await axios.post(
-      `http://localhost:5000/api/shop/review/add`,
+      `https://cap-e-com-backend.onrender.com/api/shop/review/add`,
       formdata
     );
 

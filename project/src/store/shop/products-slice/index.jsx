@@ -18,7 +18,7 @@ export const fetchAllFilteredProducts = createAsyncThunk(
     });
 
     const result = await axios.get(
-      `http://localhost:5000/api/shop/products/get?${query}`
+      `https://cap-e-com-backend.onrender.com/api/shop/products/get?${query}`
     );
 
     console.log(result);

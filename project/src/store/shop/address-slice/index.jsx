@@ -10,7 +10,7 @@ export const addNewAddress = createAsyncThunk(
   "/addresses/addNewAddress",
   async (formData) => {
     const response = await axios.post(
-      "http://localhost:5000/api/shop/address/add",
+      "https://cap-e-com-backend.onrender.com/api/shop/address/add",
       formData
     );
 

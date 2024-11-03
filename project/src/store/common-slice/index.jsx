@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `http://localhost:5000/api/common/feature/get`
+      `https://cap-e-com-backend.onrender.com/common/feature/get`
     );
 
     return response.data;
